@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/htop')
 def htop():
-    name = "Your Full Name"
+    name = "Lakshmi Nikhitha Dodda"
     username = os.getenv("USER") or os.getenv("USERNAME")
     ist_time = datetime.now(pytz.timezone("Asia/Kolkata")).strftime("%Y-%m-%d %H:%M:%S")
     top_output = subprocess.getoutput("top -b -n 1 | head -n 10")
